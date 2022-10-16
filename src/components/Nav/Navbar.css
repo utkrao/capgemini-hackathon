@@ -1,0 +1,130 @@
+.navbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 1px 0px #9E9E9E;
+  -moz-box-shadow: 0px 1px 0px #9E9E9E;
+  box-shadow: 0px 1px 0px #9E9E9E;
+  background-color: #fff;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-logo {
+    justify-self: start;
+    margin-left: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+.nav-menu {
+  display: grid;
+  width: 60%;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 15px;
+  list-style: none;
+  text-align: center;
+  margin-right: 5rem;
+  justify-content: end;
+  align-items: center;
+}
+
+  
+.nav-links {
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.1rem 0.4rem;
+  height: 100%;
+}
+
+.nav-links:hover {
+  border-bottom: 2px solid #0070AE;
+  transition: all 0.2s ease-out;
+}
+  
+.nav-links-mobile {
+  display: none;
+}
+  
+.menu-icon {
+  display: none;
+}
+
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 100px auto 0;
+  word-break: break-all;
+}
+
+.bloc-tabs {
+  display: flex;
+}
+.tabs {
+  text-align: center;
+  /* width: 100%; */
+  background: none;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: rgb(88, 147, 241);
+}
+
+button {
+  border: none;
+}
+.content-tabs {
+  flex-grow : 1;
+}
+.content {
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.active-content {
+  display: block;
+}
+
+.radar {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  justify-self: center;
+}
