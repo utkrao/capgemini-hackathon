@@ -13,6 +13,7 @@ import Cards from '../Cards/Cards';
 import SankeyChart from '../Radar/SankeyChart';
 import LeftSidebar from '../Radar/LeftSidebar';
 import RightSidebar from '../Radar/RightSidebar';
+import PolarChart from '../Radar/PolarChart';
 
 const Navbar = () => {
 
@@ -69,7 +70,8 @@ const Navbar = () => {
         >
           <div className="radar">
             <LeftSidebar />
-            <SankeyChart />
+            {/* <SankeyChart /> */}
+            <PolarChart />
             <RightSidebar />
           </div>
           <RadialChart />
