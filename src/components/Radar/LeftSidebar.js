@@ -15,10 +15,10 @@ function LeftSidebar() {
                 <Dropdown className='margin-dd'>
                     <Dropdown.Toggle id="dropdown-basic" className='dd-color'>
                         Technology
-                    </Dropdown.Toggle>
+                    </Dropdown.Toggle>  
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">AI</Dropdown.Item>
+                        <Dropdown.Item href="/radar">AI</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">Carbon Recycling</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Blockchain</Dropdown.Item>
                     </Dropdown.Menu>
