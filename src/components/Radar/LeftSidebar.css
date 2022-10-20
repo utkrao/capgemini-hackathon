@@ -4,7 +4,7 @@
     margin: 20px;
 }
 
-.explore-btn {
+.explore-btn { 
     box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     height: 2.5rem;
     width: 14rem;
@@ -66,8 +66,24 @@
     height: 14rem;
     width: 14rem;
     background-color: #09ACDC;
+    border: 1px solid #0070AE;
     border-radius: 4px;
     padding: 15px;
 }
 
+
+.margin-dd {
+    margin-top: 10px;
+}
+
+#dropdown-basic {
+    width: 14rem;
+    background-color: #09ACDC;
+    border: 1px solid #0070AE;
+    padding-right: 10px;
+}
+
+.margin-dd-side {
+    padding-right: 10px;
+}
 

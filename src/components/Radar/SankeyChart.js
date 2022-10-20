@@ -35,8 +35,7 @@ const sankeyData = [
   class SankeyChart extends Component {
     render() {
       return (
-        <div className="container mt-5">
-          <h2>React Simple Sankey Chart Example</h2>
+        <div className="container mt-2">
           <Chart className='h6 font-weight-light'
             width={600}
             height={'500px'}

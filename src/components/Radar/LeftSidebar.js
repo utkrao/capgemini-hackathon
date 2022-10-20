@@ -1,4 +1,5 @@
 import React from 'react'
+import Dropdown from 'react-bootstrap/Dropdown';
 import './LeftSidebar.css'
 
 function LeftSidebar() {
@@ -11,69 +12,53 @@ function LeftSidebar() {
             <div className="filters">
                 <h1>Filters</h1>
 
-                <div className="dd-container">
+                <Dropdown className='margin-dd'>
+                    <Dropdown.Toggle id="dropdown-basic" className='dd-color'>
+                        Technology
+                    </Dropdown.Toggle>
 
-                    <div className="btn-group dp-btn-style">
-                        <button type="button" className="btn text-white">Technology</button>
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1">AI</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Carbon Recycling</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Blockchain</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
 
-                        <button type="button" className="btn dropdown-toggle text-white" data-toggle="dropdown">
-                            <span className="caret"></span>
-                            <span className="sr-only"></span>
-                        </button>
+                <Dropdown className='margin-dd'>
+                    <Dropdown.Toggle id="dropdown-basic">
+                        Business Process
+                    </Dropdown.Toggle>
 
-                        <ul className="dropdown-menu text-white" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                        </ul>
-                    </div>
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
 
-                    <div className="btn-group dp-btn-style">
-                        <button type="button" className="btn text-white">Business process</button>
+                <Dropdown className='margin-dd'>
+                    <Dropdown.Toggle id="dropdown-basic">
+                        Industry
+                    </Dropdown.Toggle>
 
-                        <button type="button" className="btn dropdown-toggle text-white" data-toggle="dropdown">
-                            <span className="caret"></span>
-                            <span className="sr-only"></span>
-                        </button>
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
 
-                        <ul className="dropdown-menu text-white" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                        </ul>
-                    </div>
+                <Dropdown className='margin-dd'>
+                    <Dropdown.Toggle id="dropdown-basic">
+                        Asset Type
+                    </Dropdown.Toggle>
 
-                    <div className="btn-group dp-btn-style">
-                        <button type="button" className="btn text-white">Industry</button>
-
-                        <button type="button" className="btn dropdown-toggle text-white" data-toggle="dropdown">
-                            <span className="caret"></span>
-                            <span className="sr-only"></span>
-                        </button>
-
-                        <ul className="dropdown-menu text-white" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="btn-group dp-btn-style">
-                        <button type="button" className="btn text-white">Asset type</button>
-
-                        <button type="button" className="btn dropdown-toggle text-white" data-toggle="dropdown">
-                            <span className="caret"></span>
-                            <span className="sr-only"></span>
-                        </button>
-
-                        <ul className="dropdown-menu text-white" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-
-                </div>
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
 
                 <h1>Selected</h1>
                 <div className="selected-box text-white">

@@ -128,3 +128,10 @@ button {
   align-items: center;
   justify-self: center;
 }
+
+.radar2 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  justify-self: center;
+}

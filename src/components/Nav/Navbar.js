@@ -2,18 +2,13 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
 import HeroSection from '../HeroSec/HeroSection';
 import RadialChart from '../Radar/RadialChart';
 import Cards from '../Cards/Cards';
 import SankeyChart from '../Radar/SankeyChart';
 import LeftSidebar from '../Radar/LeftSidebar';
 import RightSidebar from '../Radar/RightSidebar';
-import PolarChart from '../Radar/PolarChart';
+import Polar from '../Radar/Polar';
 
 const Navbar = () => {
 
@@ -21,6 +16,12 @@ const Navbar = () => {
 
   const toggleTab = (index) => {
     setToggleState(index);
+  };
+
+  const [toggleSubState, setToggleSubState] = useState(1);
+
+  const toggleSubTab = (index) => {
+    setToggleSubState(index);
   };
 
   return (
@@ -68,10 +69,52 @@ const Navbar = () => {
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
-          <div className="radar">
+          <div className="radar mt-100">
             <LeftSidebar />
-            {/* <SankeyChart /> */}
-            <PolarChart />
+
+
+
+
+            <div className='radar2 mt-100'>
+              <div className="bloc-tabs">
+                <button
+                  className={toggleSubState === 6 ? "tabs active-tabs" : "tabs"}
+                  onClick={() => toggleSubTab(6)}
+                >
+                  Polar
+                </button>
+                <button
+                  className={toggleSubState === 7 ? "tabs active-tabs" : "tabs"}
+                  onClick={() => toggleSubTab(7)}
+                >
+                  Sankey
+                </button>
+              </div>
+
+              <div className="content-tabs">
+                <div
+                  className={toggleSubState === 6 ? "content  active-content" : "content"}
+                >
+                  <h2 className='mt-1'>Polar</h2>
+                  <Polar />
+
+                </div>
+
+                <div
+                  className={toggleSubState === 7 ? "content  active-content" : "content"}
+                >
+                  <h2 className='mt-1'>Sankey</h2>
+                  <SankeyChart />
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
             <RightSidebar />
           </div>
           <RadialChart />
