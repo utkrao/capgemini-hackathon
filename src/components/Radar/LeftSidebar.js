@@ -18,7 +18,7 @@ function LeftSidebar() {
                     </Dropdown.Toggle>  
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="/radar">AI</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1">AI</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">Carbon Recycling</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Blockchain</Dropdown.Item>
                     </Dropdown.Menu>
@@ -30,9 +30,9 @@ function LeftSidebar() {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1">Product Development</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Manufacturing</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Operational Processes</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
 
@@ -42,9 +42,9 @@ function LeftSidebar() {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1">IT</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Energy</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Sports Equipment and Accesories</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
 
@@ -54,9 +54,9 @@ function LeftSidebar() {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1">Start-Up</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Organizational Institute</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Industry Published Example</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
 

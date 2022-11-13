@@ -117,7 +117,7 @@ const Navbar = () => {
 
             <RightSidebar />
           </div>
-          <RadialChart />
+          {/* <RadialChart /> */}
         </div>
 
         <div
