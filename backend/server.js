@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 
 mongoose.connect(
-  "mongodb+srv://shashwat2910:123@cluster0.04hy5.mongodb.net/db01?retryWrites=true&w=majority",
+  "mongodb+srv://user:user123@sdgcapgemini.d6e4ptf.mongodb.net/capgemini?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
