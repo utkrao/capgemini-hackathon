@@ -1,0 +1,17 @@
+.right-sidebar {
+    margin: 15px 15px;
+}
+
+.name-box {
+    width: 25rem;
+    height: 24rem;
+    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.add-to-radar-box {
+    width: 25rem;
+    height: 15rem;
+    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #0070AE;
+}
