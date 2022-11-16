@@ -1,9 +1,10 @@
 const express = require("express")
 const mongoose = require("mongoose")
 const route = require('./api')
+const cors = require("cors")
 
 const app = express()
-
+app.use(cors())
 app.use(express.json())
 
 mongoose.connect(
@@ -16,6 +17,6 @@ mongoose.connect(
 
 app.use(route)
 
-app.listen(3000, () => {
+app.listen(4000, () => {
   console.log("Server is running...")
 })
