@@ -3,7 +3,8 @@ import LeftSidebar from "../../components/Radar/LeftSidebar";
 import Polar from "../../components/Radar/Polar";
 import RightSidebar from "../../components/Radar/RightSidebar";
 import SankeyChart from "../../components/Radar/SankeyChart";
-import "./Radar.css";
+import { Filters } from "../../Context/FiltersContext";
+import "./radar.css";
 
 const Radar = (props) => {
   const [sdg_data, setSdgData] = useState([]);
@@ -33,48 +34,50 @@ const Radar = (props) => {
 
   return (
     <>
-      <div className="radar mt-100">
-        <LeftSidebar />
+      <Filters>
+        <div className="radar mt-100">
+          <LeftSidebar />
 
-        <div className="radar2 mt-100">
-          <div className="bloc-tabs">
-            <button
-              className={toggleSubState === 6 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleSubTab(6)}
-            >
-              Polar
-            </button>
-            <button
-              className={toggleSubState === 7 ? "tabs active-tabs" : "tabs"}
-              onClick={() => toggleSubTab(7)}
-            >
-              Sankey
-            </button>
-          </div>
-
-          <div className="content-tabs">
-            <div
-              className={
-                toggleSubState === 6 ? "content  active-content" : "content"
-              }
-            >
-              <h2 className="mt-1">Polar</h2>
-              <Polar data={sdg_data} />
+          <div className="radar2 mt-100">
+            <div className="bloc-tabs">
+              <button
+                className={toggleSubState === 6 ? "tabs active-tabs" : "tabs"}
+                onClick={() => toggleSubTab(6)}
+              >
+                Polar
+              </button>
+              <button
+                className={toggleSubState === 7 ? "tabs active-tabs" : "tabs"}
+                onClick={() => toggleSubTab(7)}
+              >
+                Sankey
+              </button>
             </div>
 
-            <div
-              className={
-                toggleSubState === 7 ? "content  active-content" : "content"
-              }
-            >
-              <h2 className="mt-1">Sankey</h2>
-              <SankeyChart />
+            <div className="content-tabs">
+              <div
+                className={
+                  toggleSubState === 6 ? "content  active-content" : "content"
+                }
+              >
+                <h2 className="mt-1">Polar</h2>
+                <Polar data={sdg_data} />
+              </div>
+
+              <div
+                className={
+                  toggleSubState === 7 ? "content  active-content" : "content"
+                }
+              >
+                <h2 className="mt-1">Sankey</h2>
+                <SankeyChart />
+              </div>
             </div>
           </div>
+
+          <RightSidebar data={sdg_data} />
         </div>
-
-        <RightSidebar data={sdg_data}/>
-      </div>
+      </Filters>
     </>
   );
 };

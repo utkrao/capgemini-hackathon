@@ -9,9 +9,9 @@ import SankeyChart from "../Radar/SankeyChart";
 import LeftSidebar from "../Radar/LeftSidebar";
 import RightSidebar from "../Radar/RightSidebar";
 import Polar from "../Radar/Polar";
-import Radar from "../../pages/Radar/Radar";
-import Home from "../../pages/Home/Home";
-import About from "../../pages/About/About";
+import Radar from "../../pages/Radar/radar";
+import Home from "../../pages/Home/home";
+import About from "../../pages/About/about";
 
 const Navbar = (props) => {
   console.log(props.data);

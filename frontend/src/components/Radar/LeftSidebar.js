@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useState, useContext} from "react";
 import "./LeftSidebar.css";
+import {FiltersContext} from "../../Context/FiltersContext"
 
-function LeftSidebar() {
-  const [selectTech, setSelectTech] = React.useState(false);
-  const [selectBprocess, setSelectBprocess] = React.useState(false);
-  const [selectIndustry, setSelectIndustry] = React.useState(false);
-  const [selectAsset, setSelectAsset] = React.useState(false);
+const LeftSidebar = () => {
+  // const [selectTech, setSelectTech] = React.useState(false);
+  // const [selectBprocess, setSelectBprocess] = React.useState(false);
+  // const [selectIndustry, setSelectIndustry] = React.useState(false);
+  // const [selectAsset, setSelectAsset] = React.useState(false);
+
+
+  const filter = useContext(FiltersContext);
+
+  // const [selectTech, setSelectTech] = useContext(FiltersContext);
+  // const [selectBprocess, setSelectBprocess] = useContext(FiltersContext);
+  // const [selectIndustry, setSelectIndustry] = useContext(FiltersContext);
+  // const [selectAsset, setSelectAsset] = useContext(FiltersContext);
+  console.log(filter.select, 'this is filter context' );
 
   return (
     <div className="left-container">
@@ -18,7 +28,10 @@ function LeftSidebar() {
 
         <div class="filter-dd-style">
           <select
-            onChange={(e) => setSelectTech(e.target.value)}
+            onChange={(e) => filter.setSelect({
+              ...filter.select,
+              selectTech: e.target.value
+            })}
             class="form-select"
             id="dropdown-basic"
             aria-label="Default select example"
@@ -32,7 +45,10 @@ function LeftSidebar() {
 
         <div class="filter-dd-style">
           <select
-            onChange={(e) => setSelectBprocess(e.target.value)}
+            onChange={(e) => filter.setSelect({
+              ...filter.select,
+              selectBprocess: e.target.value
+            })}
             class="form-select"
             id="dropdown-basic"
             aria-label="Default select example"
@@ -46,7 +62,10 @@ function LeftSidebar() {
 
         <div class="filter-dd-style">
           <select
-            onChange={(e) => setSelectIndustry(e.target.value)}
+            onChange={(e) => filter.setSelect({
+              ...filter.select,
+              selectIndustry: e.target.value
+            })}
             class="form-select"
             id="dropdown-basic"
             aria-label="Default select example"
@@ -60,7 +79,10 @@ function LeftSidebar() {
 
         <div class="filter-dd-style">
           <select
-            onChange={(e) => setSelectAsset(e.target.value)}
+            onChange={(e) => filter.setSelect({
+              ...filter.select,
+              selectAsset: e.target.value
+            })}
             class="form-select"
             id="dropdown-basic"
             aria-label="Default select example"
@@ -75,34 +97,34 @@ function LeftSidebar() {
         <h1>Selected</h1>
         <div className="selected-box text-white">
           <ng-container>
-            {selectTech ? (
+            {filter.select.selectTech ? (
               <>
                 <div className="selected-filter">
-                  <h6>{selectTech}</h6>
+                  <h6>{filter.select.selectTech}</h6>
                   <img src="./images/cross.svg" alt="" />
                 </div>
               </>
             ) : null}
-            {selectBprocess ? (
+            {filter.select.selectBprocess ? (
               <>
                 <div className="selected-filter">
-                  <h6>{selectBprocess}</h6>
+                  <h6>{filter.select.selectBprocess}</h6>
                   <img src="./images/cross.svg" alt="" />
                 </div>
               </>
             ) : null}
-            {selectIndustry ? (
+            {filter.select.selectIndustry ? (
               <>
                 <div className="selected-filter">
-                  <h6>{selectIndustry}</h6>
+                  <h6>{filter.select.selectIndustry}</h6>
                   <img src="./images/cross.svg" alt="" />
                 </div>
               </>
             ) : null}
-            {selectAsset ? (
+            {filter.select.selectAsset ? (
               <>
                 <div className="selected-filter">
-                  <h6>{selectAsset}</h6>
+                  <h6>{filter.select.selectAsset}</h6>
                   <img src="./images/cross.svg" alt="" />
                 </div>
               </>
@@ -110,7 +132,7 @@ function LeftSidebar() {
           </ng-container>
 
           <ng-container>
-            {selectAsset || selectIndustry || selectBprocess || selectTech
+            {filter.select.selectAsset || filter.select.selectIndustry || filter.select.selectBprocess || filter.select.selectTech
               ? null
               : "None"}
           </ng-container>
