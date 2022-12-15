@@ -40,6 +40,8 @@ const LeftSidebar = () => {
             <option>AI</option>
             <option>Carbon Recycling</option>
             <option>Blockchain</option>
+            <option>ClimaProof</option>
+            <option>Drones</option>
           </select>
         </div>
 
@@ -55,8 +57,8 @@ const LeftSidebar = () => {
           >
             <option selected>Business Process</option>
             <option>Product Development</option>
+            <option>Supply Chain</option>
             <option>Manufacturing</option>
-            <option>Operational Processes</option>
           </select>
         </div>
 
