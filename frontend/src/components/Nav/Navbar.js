@@ -12,6 +12,7 @@ import Polar from "../Radar/Polar";
 import Radar from "../../pages/Radar/radar";
 import Home from "../../pages/Home/home";
 import About from "../../pages/About/about";
+import Roadmap from "../../pages/Roadmap/roadmap";
 
 const Navbar = (props) => {
   console.log(props.data);
@@ -68,7 +69,7 @@ const Navbar = (props) => {
               </Link>
             </button>
           </li>
-          <li className="nav-items">
+          {/* <li className="nav-items">
             <button
               className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(4)}
@@ -77,7 +78,7 @@ const Navbar = (props) => {
                 SDG Concepts
               </Link>
             </button>
-          </li>
+          </li> */}
           <li className="nav-items">
             <button
               className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
@@ -156,7 +157,7 @@ const Navbar = (props) => {
 
         <div
           className={toggleState === 3 ? "content  active-content" : "content"}
-        ></div>
+        ><Roadmap /></div>
 
         <div
           className={toggleState === 4 ? "content  active-content" : "content"}

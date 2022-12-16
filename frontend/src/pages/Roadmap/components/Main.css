@@ -1,0 +1,104 @@
+.roadmap__main {
+    margin: 30px;
+    padding: 15px;
+    box-shadow: -2px -2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #fefefe;
+    height: 47rem;
+}
+
+.roadmap__grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 0.3fr 2.2fr 2fr 2fr 2fr 1fr;
+}
+
+
+
+.number {
+    background-color: #dedede;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 999px;
+    margin-right: 20px;
+    margin-top: 90px;
+}
+
+
+
+.example .example__data {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #0070AE;
+    height: 11rem;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.example__data h5 {
+    font-size: 0.9rem;
+}
+
+.example__data h6 {
+    font-size: 0.8rem;
+}
+
+
+
+.g__action {
+    margin-right: 20px;
+}
+
+.g__action__data {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    height: 11rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+.action__time {
+    margin-right: 20px;
+}
+
+.action__time__input {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    height: 11rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.action__time__input input {
+    height: 10rem;
+    width: 100%;
+    outline: #fff;
+    padding: 10px;
+    border: 0px solid;
+    text-align: center;
+}
+
+
+
+
+.t__map {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    height: 11rem;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: translateY(35px);
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 2px solid #0070AE;
+    cursor: pointer;
+}
+
+

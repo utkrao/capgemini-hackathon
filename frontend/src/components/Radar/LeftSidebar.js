@@ -56,6 +56,8 @@ const LeftSidebar = () => {
             aria-label="Default select example"
           >
             <option selected>Business Process</option>
+            <option>Logistics</option>
+            <option>Research and Development</option>
             <option>Product Development</option>
             <option>Supply Chain</option>
             <option>Manufacturing</option>
@@ -73,6 +75,7 @@ const LeftSidebar = () => {
             aria-label="Default select example"
           >
             <option selected>Industry</option>
+            <option>Retail</option>
             <option>IT</option>
             <option>Energy</option>
             <option>Sports Equipment and Accesories</option>

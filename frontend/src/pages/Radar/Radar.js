@@ -70,7 +70,7 @@ const Radar = (props) => {
                 }
               >
                 <h2 className="mt-1">Sankey</h2>
-                <SankeyChart />
+                <SankeyChart data={sdg_data} />
               </div>
             </div>
           </div>
